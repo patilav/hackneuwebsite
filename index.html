@@ -110,7 +110,7 @@
                     </p>
                     <h3>Spring 2017 Theme: <br> “Hack the New!”</h3>
                     <p class="text-muted text-center">
-                    VR/AR, Artificial Intelligence, Machine learning, Data science, IoT etc. Basically all things on the cutting edge of technology!
+                    VR/AR, Artificial Intelligence, Machine Learning, Data Science, IoT etc. Basically all things on the cutting edge of technology!
                         <br><br><br>
                     <p>
                 </div>
@@ -163,7 +163,7 @@
                     <h4 class="service-heading">
                         Hack on the latest tech!
                     </h4>
-                    <p> Get a chance to hack on new technologies and be the change to see the change!
+                    <p>  Opportunities to test drive new technologies and devices!
                     </p>
                 </div>
                 <div class="col-md-3">
@@ -171,9 +171,9 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-camera fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Prizes and Recongnition</h4>
-                    Meet elites from the industry in form of Judges and technical metors. <br>
-                    Win exciting prizes and get featured in Northeastern blogs!
+                    <h4 class="service-heading">Prizes and Recognition</h4>
+                    Meet elites from the industry in form of judges and technical mentors. <br>
+                    Win exciting prizes and get featured in Northeastern blogs and Hackathon recaps!
                 </div>
                 <div class="col-md-3">
                     <span class="fa-stack fa-4x">
@@ -183,7 +183,7 @@
                         <h4 class="service-heading">
                             Sponsor booths  
                         </h4>
-                    <p>Get a chance to talk to sponsor companies and chance to talk to latest innovation and a change to land a job.</p>
+                    <p>Opportunities to speak and network with representatives from corporate, student and non-profit sponsors</p>
                 </div>
                 <div class="col-md-3">
                     <span class="fa-stack fa-4x">
@@ -191,7 +191,7 @@
                         <i class="fa fa-book fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Fun. Food. Swag</h4>
-                    <p>Get amazing food, swag, networking opportunities, job opportunities and last but not the least prizes.</p>
+                    <p>Enjoy camaraderie of colleagues, fine food, swag and prizes!</p>
                 </div>
             </div>
         </div>
@@ -219,7 +219,7 @@
                 <div class="col-md-4">
                     <h4 class="service-heading">Submission:</h4>
                     <p class="text-muted">
-                        For this Hackathon session participants are required to login to <a href="https://hackneu2017.devpost.com"> hackneu2017.devpost.com </a> and submit peoject wise details for challenge/prize consideration by judges.
+                        For this Hackathon session participants are required to login to <a href="https://hackneu2017.devpost.com"> hackneu2017.devpost.com </a> and submit project wise details for challenge/prize consideration by judges.
                     </p>
                 </div>
             </div>
@@ -227,7 +227,7 @@
                 <div class="col-md-4">
                     <h4 class="service-heading">Project Demo:</h4>
                     <p class="text-muted">
-                        You must demo your hack in order to present. No slide-decks or Powerpoint will be allowed. Time limit for presentations and Q &amp; will be announced soon.
+                        You must demo your hack in order to present. No slide-decks or PowerPoint will be allowed. Time limit for presentations and Q &amp; A will be announced soon.
                     </p>
                 </div>
                 <div class="col-md-4">
@@ -255,7 +255,9 @@
                     <h2 class="section-heading">Sponsors</h2>
                 </div>
             </div>
-
+            <div class="row">
+                <h4 class="text-center"><i>More sponsor details coming soon! </i></h4>
+            </div>
             <div class="item">
                 <div class="row">
                     <div ng-repeat="x in sponsors" class="col-md-4">
@@ -265,7 +267,7 @@
                     </div>
                 </div>
             </div>
-            <h5 class="text-center"><i>More sponsor details coming soon! </i></h5>
+            
         </div>
     </section>
 
@@ -291,7 +293,7 @@
                         <p><b>8.45am-10.30am </b> Breakfast</p>
                         <p><b>10.00am</b> Opening Ceremony</p>
                         <p><b>10.30am-12.00pm</b> AR/VR Training Session	</p>
-                        <p><b>11.00am-12.00pm</b> Pitchs/Form teams:</p>
+                        <p><b>11.00am-12.00pm</b> Pitch/Form teams:</p>
                         <p><b>11.45am-1.00pm</b> Lunch!</p>
                         <p><b>12.00pm</b> Hacking Begins!</p>
                         <p><b>12.30pm-1.30pm</b> Project/Pitch Workshop</p>
@@ -333,7 +335,7 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}">                                    {{x.question}}</a>
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse{{$index}}">{{x.question}}</a>
                         </h4>
                     </div>
                     <div id="collapse{{$index}}" class="panel-collapse collapse">
@@ -352,13 +354,70 @@
                     <h2 class="section-heading">The Team</h2>
                 </div>
                 <div class="team-container">
+
             <div class="row">
-                <div ng-repeat="x in teamdata" class="col-md-4 member-container hvr-grow">
+                <div ng-repeat="x in teamdata" ng-if="!x.judge && !x.tech_mentor" class="col-md-4 member-container hvr-grow">
                     <a href="{{x.portfolio}}" target="_blank">
                     <img ng-src="{{x.image}}" class="img-circle">
                     </a>
                     <div>
                         <label class="text">{{x.name}}</label><br/>
+                        <label class="title"><i>{{x.position}}</i></label><br/>
+                        <a href="{{x.email}}" target="_blank">
+                            <i class="fa fa-envelope fa-lg" aria-hidden="true" fa-lg> </i>
+                        </a>
+                        <a href="{{x.twitter}}" target="_blank">
+                            <i class="fa fa-twitter fa-lg" aria-hidden="true" fa-lg> </i>
+                        </a>
+                        <a href="{{x.linkedin}}" target="_blank">
+                            <i class="fa fa-linkedin fa-lg" aria-hidden="true" fa-lg> </i>
+                        </a>
+                        <a href="{{x.github}}" target="_blank">
+                            <i class="fa fa-github fa-lg" aria-hidden="true" fa-lg></i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="text-center">
+                    <h2 class="section-heading">Judges</h2>
+                </div>
+            <div class="team-container">
+            <div class="row">
+                <div ng-repeat="x in teamdata" ng-if="x.judge && !x.tech_mentor" class="col-md-4 member-container hvr-grow">
+                    <a href="{{x.portfolio}}" target="_blank">
+                    <img ng-src="{{x.image}}" class="img-circle">
+                    </a>
+                    <div>
+                        <label class="text">{{x.name}}</label><br/>
+                        <label class="title"><i>{{x.position}}</i></label><br/>
+                        <a href="{{x.email}}" target="_blank">
+                            <i class="fa fa-envelope fa-lg" aria-hidden="true" fa-lg> </i>
+                        </a>
+                        <a href="{{x.twitter}}" target="_blank">
+                            <i class="fa fa-twitter fa-lg" aria-hidden="true" fa-lg> </i>
+                        </a>
+                        <a href="{{x.linkedin}}" target="_blank">
+                            <i class="fa fa-linkedin fa-lg" aria-hidden="true" fa-lg> </i>
+                        </a>
+                        <a href="{{x.github}}" target="_blank">
+                            <i class="fa fa-github fa-lg" aria-hidden="true" fa-lg></i>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="text-center">
+                    <h2 class="section-heading">Technical Mentors</h2>
+                </div>
+            <div class="team-container">
+            <div class="row">
+                <div ng-repeat="x in teamdata" ng-if="!x.judge && x.tech_mentor" class="col-md-4 member-container hvr-grow">
+                    <a href="{{x.portfolio}}" target="_blank">
+                    <img ng-src="{{x.image}}" class="img-circle">
+                    </a>
+                    <div>
+                        <label class="text-tech">{{x.name}}</label><br/>
                         <label class="title"><i>{{x.position}}</i></label><br/>
                         <a href="{{x.email}}" target="_blank">
                             <i class="fa fa-envelope fa-lg" aria-hidden="true" fa-lg> </i>
