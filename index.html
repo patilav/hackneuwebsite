@@ -133,6 +133,9 @@
                     </a>
                     </div>
                         <br><br><br>
+
+                        
+                        
                     <div class="col-lg-6 text-center">
                     <a href="https://goo.gl/0xEqs7" target="_blank">
                         <button class='btn btn-shiny text-center'>Register as a Volunteer</button>
@@ -259,11 +262,11 @@
                 <h4 class="text-center"><i>More sponsor details coming soon! </i></h4>
             </div>
 
-            <!--
-<h2 class="section-subheading text-center">Corporate Sponsors</h2>
+            
+<h2 class="section-subheading text-center">Corporate Sponsor</h2>
             <div class="item">
                 <div class="row">
-                    <div ng-repeat="x in sponsors" ng-if="x.type==3" class="col-md-4">
+                    <div ng-repeat="x in sponsors" ng-if="x.type==3" class="col-md-3 col-sm-6 col-md-offset-5">
                     
                         <a href="{{x.url}}" target="_blank">
                             <img ng-src="{{x.image}}" width="100%"> 
@@ -272,7 +275,7 @@
                     </div>
                 </div>
             </div>
-            -->
+            
 <h2 class="section-subheading text-center">Non-Profit Sponsors</h2>
             <div class="item">
                 <div class="row">
@@ -286,7 +289,7 @@
                 </div>
             </div>
 
-                              <h2 class="section-subheading text-center">Alumni/AE Sponsors</h2>
+                              <h2 class="section-subheading text-center">Alumni/AE Sponsor</h2>
             <div class="item">
                 <div class="row">
                     <div ng-repeat="x in sponsors" ng-if="x.type==4" class="col-md-3 col-sm-4 col-sm-offset-4 col-md-offset-5">
@@ -312,6 +315,21 @@
                     </div>
                 </div>
             </div>
+            
+            <h2 class="section-subheading text-center">Meal Sponsor</h2>
+            <div class="item">
+                <div class="row">
+                    <div ng-repeat="x in sponsors" ng-if="x.type==5" class="col-md-4 col-sm-6 col-md-offset-4">
+                    
+                        <a href="{{x.url}}" target="_blank">
+                            <img ng-src="{{x.image}}" width="100%"> 
+                        </a>
+                    
+                    </div>
+                </div>
+            </div>
+            
+            
 
             
         </div>
@@ -331,43 +349,148 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6 col-md-3 card schedule-card">
-                        &nbsp;
-                </div>
-                <div class="col-sm-6 col-md-3 card schedule-card">
-                    <div class="card-header">
+
+                <div class="col-sm-12 col-md-12">
+                    <div class="card-header text-center">
                         <h3>Feb 11, 2017 - SATURDAY</h3>
                     </div>
-                    <div class="card-text">
-                        <p><b>8.30am-10.00am</b> Registration</p>
-                        <p><b>8.45am-10.30am </b> Breakfast</p>
-                        <p><b>10.00am</b> Opening Ceremony</p>
-                        <p><b>10.30am-12.00pm</b> AR/VR Training Session	</p>
-                        <p><b>11.00am-12.00pm</b> Pitch/Form teams:</p>
-                        <p><b>11.45am-1.00pm</b> Lunch!</p>
-                        <p><b>12.00pm</b> Hacking Begins!</p>
-                        <p><b>12.30pm-1.30pm</b> Project/Pitch Workshop</p>
-                        <p><b>7.00p-9.00p</b> Dinner:</p>
-                        <p><b>12pm</b> Midnight snack</p>
+                    <div class="table-responsive">
+                    <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Event Agenda</th>
+                            <th>Location</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>7.30am-8.00am</td>
+                            <td>Volunteer Briefing for Saturday</td>
+                            <td>LOBBY West Village H Registration</td>
+                        </tr>
+                                                <tr>
+                            <td>8.30am-10.00am</td>
+                            <td>Breakfast service/Registration</td>
+                            <td>LOBBY West Village H</td>
+                        </tr>
+                                                <tr>
+                            <td>10.00am</td>
+                            <td>Welcome and Introductions</td>
+                            <td>West Village H Classroom 108</td>
+                        </tr>
+                                                <tr>
+                            <td>11.00am-Noon</td>
+                            <td>
+                            <ul>
+                                <li>Pitch/Teams and Project session/solos</li>
+                                <li>Nabanita De/Hacker Women in Tech - "How to Hack @hackathons?"</li>
+                                <li>For established teams, Hacking Begins!  During this time mentors walk the event to observe, offer technical advice, etc.</li>
+                            </ul>
+                           
+                            </td>
+                            <td><ul>
+                                <li>West Village H 166</li>
+                                <li>West Village H 462</li>
+                            </ul></td>
+                        </tr>
+                                                <tr>
+                            <td>1.00pm</td>
+                            <td>Lunch Service</td>
+                            <td>LOBBY outside Classroom 108</td>
+                        </tr>
+                                                <tr>
+                            <td>6.00pm</td>
+                            <td>Dinner service</td>
+                            <td>LOBBY outside Classroom 108</td>
+                        </tr>
+                        <tr>
+                            <td>12:00am</td>
+                            <td>Midnight Snack (See Slack for info!)</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+
+                    </table>
+
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3 card schedule-card">
-                    <div class="card-header">
+                <div class="col-sm-12 col-md-12">
+                    <div class="card-header text-center">
                         <h3>Feb 12, 2017 - SUNDAY</h3>
                     </div>
-                    <div class="card-text">
-                        <p><b>8.45am-10.30am </b> Breakfast</p>                            <p><b>11.45am-1.00pm</b> Lunch!</p>
-                        <p><b>12.00pm</b> Hacking ends!</p>
-                        <p><b>1.00pm</b> Final submissions on devpost.com</p>
-                        <p><b>1.00pm-2.30pm</b> Project Demo</p>
-                        <p><b>2.30pm-3.30pm</b> Final judging</p>
-                        <p><b>3.45pm-4.15pm</b> Winners announcement &amp; prize distribution</p>
-                        <p><b>4:30pm</b> Closing Remarks</p>
+                                        <div class="table-responsive">
+                    <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Event Agenda</th>
+                            <th>Location</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>7.30am-8.00am</td>
+                            <td>Volunteer Briefing for Saturday</td>
+                            <td>LOBBY West Village H Registration</td>
+                        </tr>
+                                                <tr>
+                            <td>8.30am</td>
+                            <td>Continental Breakfast</td>
+                            <td>LOBBY outside Classroom 108</td>
+                        </tr>
+                                                <tr>
+                            <td>Noon</td>
+                            <td>Hacking ends!
+                            <ul>
+                                <li>Lunch service</li>
+                                <li>IDEA Session - “Effective Presentations”</li>
+                            </ul>
+                            </td>
+                            <td>
+                            <ul>
+                            <br/>
+                            <li>
+                            LOBBY outside Classroom 108
+                            </li>
+                            <li>West Village H Classroom 108</li>
+                            </ul>
+                            </td>
+                        </tr>
+                                                <tr>
+                            <td>1.00pm</td>
+                            <td>
+                            Final submissions posted to devpost.com
+                           
+                            </td>
+                            <td></td>
+                        </tr>
+                                                <tr>
+                            <td>1.00pm-2.00pm</td>
+                            <td>Individual Project Demonstrations (Refreshments Provided)</td>
+                            <td>West Village H Classroom 108</td>
+                        </tr>
+                                                <tr>
+                            <td>2.00pm-2.30pm/3.00pm</td>
+                            <td>Judging Session</td>
+                            <td>West Village H 166</td>
+                        </tr>
+                        <tr>
+                            <td>3.00pm-4.30pm</td>
+                            <td>Winners Announcement/Close</td>
+                            <td>West Village H Classroom 108</td>
+                        </tr>
+                    </tbody>
+
+                    </table>
+
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3 card schedule-card">
-                                &nbsp;
-                </div>
+
             </div>
         </div>
     </section>
@@ -406,7 +529,7 @@
                 <div class="team-container">
 
             <div class="row">
-                <div ng-repeat="x in teamdata" ng-if="!x.judge && !x.tech_mentor" class="col-md-4 member-container hvr-grow">
+                <div ng-repeat="x in teamdata" ng-if="!x.positions[0] && !x.positions[1] && !x.positions[2]" class="col-md-4 member-container hvr-grow">
                     <a href="{{x.portfolio}}" target="_blank">
                     <img ng-src="{{x.image}}" class="img-circle">
                     </a>
@@ -434,7 +557,7 @@
                 </div>
             <div class="team-container">
             <div class="row">
-                <div ng-repeat="x in teamdata" ng-if="x.judge && !x.tech_mentor" class="col-md-4 member-container hvr-grow">
+                <div ng-repeat="x in teamdata" ng-if="x.positions[0] && !x.positions[1] && !x.positions[2]" class="col-md-4 member-container hvr-grow">
                     <a href="{{x.portfolio}}" target="_blank">
                     <img ng-src="{{x.image}}" class="img-circle">
                     </a>
@@ -458,11 +581,32 @@
                 </div>
             </div>
             <div class="text-center">
-                    <h2 class="section-heading">Technical Mentors</h2>
+                    <h2 class="section-heading">Technical Mentors/Speaker</h2>
                 </div>
             <div class="team-container">
             <div class="row">
-                <div ng-repeat="x in teamdata" ng-if="!x.judge && x.tech_mentor" class="col-md-4 member-container hvr-grow">
+                <div ng-repeat="x in teamdata" ng-if="!x.positions[0] && x.positions[1] && !x.positions[2]" class="col-md-4 member-container hvr-grow">
+                    <a href="{{x.portfolio}}" target="_blank">
+                    <img ng-src="{{x.image}}" class="img-circle">
+                    </a>
+                    <div>
+                        <label class="text-tech">{{x.name}}</label><br/>
+                        <label class="title"><i>{{x.position}}</i></label><br/>
+                        <a href="{{x.email}}" target="_blank">
+                            <i class="fa fa-envelope fa-lg" aria-hidden="true" fa-lg> </i>
+                        </a>
+                        <a href="{{x.twitter}}" target="_blank">
+                            <i class="fa fa-twitter fa-lg" aria-hidden="true" fa-lg> </i>
+                        </a>
+                        <a href="{{x.linkedin}}" target="_blank">
+                            <i class="fa fa-linkedin fa-lg" aria-hidden="true" fa-lg> </i>
+                        </a>
+                        <a href="{{x.github}}" target="_blank">
+                            <i class="fa fa-github fa-lg" aria-hidden="true" fa-lg></i>
+                        </a>
+                    </div>
+                </div>
+                                <div ng-repeat="x in teamdata" ng-if="!x.positions[0] && x.positions[1] && x.positions[2]" class="col-md-4 member-container hvr-grow">
                     <a href="{{x.portfolio}}" target="_blank">
                     <img ng-src="{{x.image}}" class="img-circle">
                     </a>
@@ -484,6 +628,9 @@
                     </div>
                 </div>
                 </div>
+            </div>
+
+
             </div>
         </div>
          
